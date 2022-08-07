@@ -55,3 +55,8 @@ jobs:
         shell: bash
         run: |
           make test
+
+      - name: Run PHP CS fixer
+        shell: bash
+        run: |
+          make cs-fix
