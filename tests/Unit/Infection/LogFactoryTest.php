@@ -6,6 +6,4 @@ use Alfiesal\InfectionGitlabComment\Infection\LogFactory;
 
 it('should create log from json file', function () {
     $log = LogFactory::fromJson(getcwd().'/tests/fixtures/infection.json');
-
-    var_dump($log->escaped());
 });
