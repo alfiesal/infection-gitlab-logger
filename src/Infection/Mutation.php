@@ -2,7 +2,6 @@
 
 namespace Alfiesal\InfectionGitlabComment\Infection;
 
-
 final class Mutation
 {
     private function __construct(
@@ -10,8 +9,7 @@ final class Mutation
         private string $originalFilePath,
         private int $originalStartLine,
         private string $diff
-    ){
-
+    ) {
     }
 
     public static function fromArray(array $data): Mutation
@@ -44,4 +42,3 @@ final class Mutation
         return $this->diff;
     }
 }
-

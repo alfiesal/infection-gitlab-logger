@@ -25,6 +25,7 @@ final class RunCommand extends Command
                     'single, separate'
                 ),
                 'separate'
-            );
+            )
+        ;
     }
 }

@@ -49,7 +49,9 @@ jobs:
       - name: Install dependencies
         run: |
           composer install --no-interaction --prefer-dist --no-progress
+      
+
       - name: Run unit tests
         shell: bash
         run: |
-          composer test
+          make test

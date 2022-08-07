@@ -8,8 +8,7 @@ final class Log
         private Statistics $statistics,
         private array $escaped,
         private array $uncovered
-    )
-    {
+    ) {
     }
 
     public function statistics(): Statistics

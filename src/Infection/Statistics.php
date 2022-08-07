@@ -7,27 +7,26 @@ namespace Alfiesal\InfectionGitlabComment\Infection;
 final class Statistics
 {
     private function __construct(
-        private int   $totalMutants,
-        private int   $killed,
-        private int   $notCovered,
-        private int   $escaped,
+        private int $totalMutants,
+        private int $killed,
+        private int $notCovered,
+        private int $escaped,
         private float $msi,
         private float $mutationCodeCoverage,
         private float $coveredCodeMsi
-    )
-    {
+    ) {
     }
 
     public static function fromArray(array $data): Statistics
     {
         return new Statistics(
-            totalMutants: (int)$data['totalMutantsCount'],
-            killed: (int)$data['killedCount'],
-            notCovered: (int)$data['notCoveredCount'],
-            escaped: (int)$data['escapedCount'],
-            msi: (float)$data['msi'],
-            mutationCodeCoverage: (float)$data['mutationCodeCoverage'],
-            coveredCodeMsi: (float)$data['coveredCodeMsi'],
+            totalMutants: (int) $data['totalMutantsCount'],
+            killed: (int) $data['killedCount'],
+            notCovered: (int) $data['notCoveredCount'],
+            escaped: (int) $data['escapedCount'],
+            msi: (float) $data['msi'],
+            mutationCodeCoverage: (float) $data['mutationCodeCoverage'],
+            coveredCodeMsi: (float) $data['coveredCodeMsi'],
         );
     }
 
