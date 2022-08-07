@@ -20,5 +20,21 @@
     },
     "require": {
         "symfony/console": "^6.0"
+    },
+    "scripts": {
+        "test": [
+            "vendor/bin/pest"
+        ],
+        "static:analyze": [
+            "tools/vendor/bin/phpstan analyze -c phpstan.neon"
+        ],
+        "cs:php:fix": "tools/vendor/bin/php-cs-fixer fix",
+        "install:tools": "composer install --working-dir=./tools",
+        "post-install-cmd": [
+            "@tools:install"
+        ],
+        "post-update-cmd": [
+            "@tools:install"
+        ]
     }
 }
