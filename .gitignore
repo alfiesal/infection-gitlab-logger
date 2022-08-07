@@ -4,4 +4,4 @@
 /.tools/
 tools/vendor/
 vendor/
-/phpunit.result.cache
+.phpunit.result.cache
