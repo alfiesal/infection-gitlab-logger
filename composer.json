@@ -1,0 +1,24 @@
+{
+    "name": "alfiesal/infection-gitlab-logger",
+    "description": "Adds infection log as comment to GitLab Merge Request",
+    "type": "library",
+    "require-dev": {
+        "pestphp/pest": "^1.21"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Alfiesal\\InfectionGitlabComment\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "require": {
+        "symfony/console": "^6.0"
+    }
+}

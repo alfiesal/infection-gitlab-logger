@@ -1,0 +1,7 @@
+!/.tools/.gitkeep
+/.idea
+/.php_cs.cache
+/.tools/
+tools/vendor/
+vendor/
+/phpunit.result.cache
